@@ -5,25 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCTR Perú Seguro | Cotización y Asesoría con IA</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #333; }
-        header { background-color: #0d233a; color: white; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
-        header h1 { margin: 0; font-size: 22px; color: #00e676; }
-        .hero { padding: 80px 40px; text-align: center; background: white; border-bottom: 1px solid #e0e0e0; }
-        .hero h2 { font-size: 38px; color: #0d233a; margin-bottom: 15px; }
-        .hero p { font-size: 18px; color: #666; max-width: 600px; margin: 0 auto 30px auto; }
-        .badge { background: #e8f5e9; color: #2e7d32; padding: 6px 16px; border-radius: 20px; font-weight: bold; font-size: 14px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; color: #1e293b; }
+        header { background-color: #0f172a; color: white; padding: 18px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 22px; font-weight: bold; color: #10b981; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .badge { background: #dcfce7; color: #15803d; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 13px; }
+        .hero { max-width: 1100px; margin: 60px auto; padding: 0 20px; text-align: center; }
+        .hero-tag { background-color: #e0f2fe; color: #0369a1; padding: 6px 16px; border-radius: 20px; font-size: 14px; font-weight: 600; display: inline-block; margin-bottom: 20px; }
+        .hero h1 { font-size: 42px; color: #0f172a; line-height: 1.2; margin-bottom: 20px; font-weight: 800; }
+        .hero h1 span { color: #10b981; }
+        .hero p { font-size: 18px; color: #64748b; max-width: 700px; margin: 0 auto 35px auto; line-height: 1.6; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        .card { background: white; padding: 30px; border-radius: 12px; border: 1px solid #e2e8f0; text-align: left; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .card h3 { color: #0f172a; font-size: 18px; margin-bottom: 10px; }
+        .card p { color: #64748b; font-size: 14px; line-height: 1.5; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>SCTRPerúSeguro</h1>
-        <span class="badge">Seguro Obligatorio - D.S. 009-97-SA</span>
+        <div class="logo">🛡️ SCTRPerúSeguro</div>
+        <span class="badge">Seguro Obligatorio • D.S. 009-97-SA</span>
     </header>
 
     <section class="hero">
-        <h2>Protege a tu equipo con el SCTR obligatorio en Perú</h2>
-        <p>Cotización rápida y asesoría experta en línea para empresas de construcción, minería, industria y más.</p>
+        <span class="hero-tag">SEGURO OBLIGATORIO DE TRABAJO DE RIESGO</span>
+        <h1>Protege a tu equipo con el <span>SCTR obligatorio</span> en Perú</h1>
+        <p>Cotización rápida, cálculo de tasas por CIIU y asesoría normativa para empresas de construcción, minería, industria y más.</p>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>📋 Cobertura Normativa</h3>
+            <p>Atención completa en consultas sobre la Ley N.º 26790, coberturas de Salud y Pensión para actividades de riesgo.</p>
+        </div>
+        <div class="card">
+            <h3>⚡ Cotización Instantánea</h3>
+            <p>Interactúa con nuestro agente inteligente en el widget flotante para calcular tasas e importes según tu RUC o CIIU.</p>
+        </div>
+        <div class="card">
+            <h3>🔒 Garantía y Cumplimiento</h3>
+            <p>Validación oficial de tarifas y primas mínimas según la normativa laboral y aseguradora vigente en Perú.</p>
+        </div>
     </section>
 
     <!-- INTEGRACIÓN DE BOTPRESS WEBCHAT -->
